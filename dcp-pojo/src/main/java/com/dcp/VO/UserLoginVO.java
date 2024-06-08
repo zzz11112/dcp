@@ -9,8 +9,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserVO {
+public class UserLoginVO {
     private Long id;
-    private String openid;
-    private String token;
+
+    private String username;
+
+    private String name;
+
+    //TODO jwt token
 }

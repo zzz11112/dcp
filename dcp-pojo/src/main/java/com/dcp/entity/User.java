@@ -12,24 +12,29 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
+    //TODO find out private static final long serialVersionUID = 1L;
+
     private Long id;
 
-    //姓名
+    private String username;
+
     private String name;
 
-    //手机号
+    private String password;
+
     private String phone;
 
-    //性别 0 女 1 男
     private String sex;
 
-    //身份证号
-    private String idNumber;
+    //private String idNumber;不用
 
-    //头像
-    private String avatar;
+    private Integer status;//账户可用状态
 
-    //注册时间
+    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
+
+    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
+
 
 }
